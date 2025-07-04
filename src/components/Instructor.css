@@ -1,0 +1,32 @@
+.instructor {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.instructor-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.instructor h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.instructor h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ff69b4;
+  margin-bottom: 15px;
+}
+
+.instructor p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}

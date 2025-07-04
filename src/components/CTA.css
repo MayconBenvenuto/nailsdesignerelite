@@ -1,0 +1,32 @@
+.cta {
+    background-color: #ff69b4; /* Rosa */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta button {
+    background-color: white;
+    color: #ff69b4;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cta button:hover {
+    transform: scale(1.05);
+}
