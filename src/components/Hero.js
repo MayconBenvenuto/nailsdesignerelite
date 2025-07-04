@@ -62,7 +62,7 @@ const Hero = () => {
           <iframe
             width="100%"
             height="320"
-            src="https://www.youtube.com/embed/r0DOaqETCVQ?rel=0&autoplay=1&mute=1&loop=1&playlist=r0DOaqETCVQ"
+            src="https://www.youtube.com/embed/r0DOaqETCVQ?autoplay=1&mute=1&loop=1&playlist=r0DOaqETCVQ&modestbranding=1&controls=0&rel=0"
             title="Depoimento de uma de nossas alunas"
             frameBorder="0"
             allow="autoplay; encrypted-media"
