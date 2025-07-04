@@ -28,6 +28,12 @@
     padding: 12px 16px;
     font-size: 1rem;
   }
+  /* DEBUG: assegurar exibição do vídeo no mobile */
+  .testimonial-video {
+    display: block !important;
+    min-height: 200px !important;
+    border: 2px dashed blue; /* Debug visual */
+  }
 }
 
 @media (max-width: 480px) {

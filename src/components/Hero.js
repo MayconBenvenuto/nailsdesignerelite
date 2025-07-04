@@ -59,15 +59,18 @@ const Hero = () => {
           Invista <span style={{ color: '#DC143C', fontWeight: 900 }}>R$79</span> em você e comece a ganhar até <span style={{ color: '#DC143C', fontWeight: 900 }}>R$4.000/mês</span> com Nails Design.
         </p>
         <h2 className="testimonial-video-title">Depoimento de uma de nossas alunas</h2>
-        <video 
+        <video
           ref={videoRef}
-          className="testimonial-video" 
-          controls 
+          className="testimonial-video"
+          controls
           preload="metadata"
           playsInline
           loop
           muted
-          poster=""
+          autoPlay
+          onLoadedData={() => console.log('Vídeo carregado com sucesso')} // Debug: verifica se o vídeo carrega
+          onError={(e) => console.error('Erro ao carregar vídeo:', e)} // Debug: erros de carregamento
+          style={{ border: '2px dashed red', minHeight: 200 }} // Debug visual: borda e altura mínima
         >
           <source src={videoDepoimento} type="video/mp4" />
           Seu navegador não suporta o formato de vídeo.

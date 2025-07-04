@@ -22,6 +22,9 @@
     width: 100%;
     max-width: 400px; /* Limita a largura máxima em telas maiores */
     height: auto; /* Mantém a proporção */
+    aspect-ratio: 16/9; /* Reserva espaço em mobile mesmo sem autoplay */
+    background-color: #000; /* Cor de fundo enquanto carrega */
+    object-fit: cover; /* Ajusta o vídeo ao container */
     border-radius: 10px; /* Bordas arredondadas */
     margin-bottom: 16px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adiciona sombra para destacar o vídeo */
