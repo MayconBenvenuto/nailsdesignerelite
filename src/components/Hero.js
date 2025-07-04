@@ -1,9 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import '../styles/Hero.css';
 
-// Vídeo hospedado em CDN via raw.githack para suportar range requests
-const VIDEO_URL = 'https://rawcdn.githack.com/MayconBenvenuto/nailsdesignerelite/master/src/assets/videos/depoimento.mp4';
-
 const Hero = () => {
   const videoRef = useRef(null);
 
@@ -61,21 +58,18 @@ const Hero = () => {
           Invista <span style={{ color: '#DC143C', fontWeight: 900 }}>R$79</span> em você e comece a ganhar até <span style={{ color: '#DC143C', fontWeight: 900 }}>R$4.000/mês</span> com Nails Design.
         </p>
         <h2 className="testimonial-video-title">Depoimento de uma de nossas alunas</h2>
-        <video
-          ref={videoRef}
-          className="testimonial-video"
-          controls
-          preload="metadata"
-          playsInline
-          loop
-          muted
-          autoPlay
-          onLoadedData={() => console.log('Vídeo carregado com sucesso')} // Debug
-          onError={(e) => console.error('Erro ao carregar vídeo:', e)} // Debug
-        >
-          <source src={VIDEO_URL} type="video/mp4" />
-          Seu navegador não suporta o formato de vídeo.
-        </video>
+        <div style={{ display: 'flex', justifyContent: 'center', margin: '16px 0' }}>
+          <iframe
+            width="100%"
+            height="320"
+            src="https://www.youtube.com/embed/r0DOaqETCVQ?rel=0&autoplay=1&mute=1&loop=1&playlist=r0DOaqETCVQ"
+            title="Depoimento de uma de nossas alunas"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            style={{ borderRadius: 10, maxWidth: 400 }}
+          ></iframe>
+        </div>
         <a href="https://go.hotmart.com/H100473557A?ap=3259" target="_blank" rel="noopener noreferrer">
           <button style={{ background: '#DC143C', color: '#fff', fontWeight: 700, fontSize: 18, boxShadow: '0 2px 8px #C71585', border: 'none', borderRadius: 50, padding: '14px 32px', marginTop: 8 }}>
             Quero me inscrever agora
