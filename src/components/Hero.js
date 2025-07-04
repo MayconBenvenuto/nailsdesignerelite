@@ -56,7 +56,7 @@ const Hero = () => {
         </h1>
         <p style={{ color: '#fff', fontWeight: 'bold', marginBottom: 16, fontSize: 20, textShadow: '0 1px 6px #6A0DAD' }}>
           Minhas alunas estão faturando alto fazendo unhas em casa com um método simples e acessível.<br />
-          Invista <span style={{ color: '#C71585', fontWeight: 900 }}>R$79</span> em você e comece a ganhar até <span style={{ color: '#DC143C', fontWeight: 900 }}>R$4.000/mês</span> com Nails Design.
+          Invista <span style={{ color: '#DC143C', fontWeight: 900 }}>R$79</span> em você e comece a ganhar até <span style={{ color: '#DC143C', fontWeight: 900 }}>R$4.000/mês</span> com Nails Design.
         </p>
         <h2 className="testimonial-video-title">Depoimento de uma de nossas alunas</h2>
         <video 
