@@ -24,6 +24,15 @@
     height: auto; /* Mantém a proporção */
     border-radius: 10px; /* Bordas arredondadas */
     margin-bottom: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adiciona sombra para destacar o vídeo */
+}
+
+.testimonial-video-title {
+    color: #fff !important;
+    font-size: 18px !important;
+    margin-bottom: 12px !important;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    font-weight: 600;
 }
 
 .hero h1 {
