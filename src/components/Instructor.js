@@ -1,5 +1,5 @@
 import React from 'react';
-import './Instructor.css';
+import '../styles/Instructor.css';
 // import instructorImage from '../assets/instructor.jpg'; // Adicione a imagem da instrutora na pasta assets
 const instructorImage = 'https://placehold.co/150'; // Imagem de placeholder
 

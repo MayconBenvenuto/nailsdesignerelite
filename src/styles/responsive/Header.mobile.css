@@ -1,0 +1,9 @@
+/* Estilos responsivos para Header (mobile) */
+@media (max-width: 768px) {
+  header {
+    /* Exemplo: ajuste de layout para mobile */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* Adicione regras responsivas específicas para mobile aqui */
+}

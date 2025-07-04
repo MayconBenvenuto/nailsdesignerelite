@@ -1,0 +1,8 @@
+/* Estilos responsivos para CTA (mobile) */
+@media (max-width: 768px) {
+  .cta {
+    padding: 12px 0;
+    font-size: 1.1rem;
+  }
+  /* Adicione regras responsivas específicas para mobile aqui */
+}

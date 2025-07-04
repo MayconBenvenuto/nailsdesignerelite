@@ -1,0 +1,8 @@
+/* Estilos responsivos para App (mobile) */
+@media (max-width: 768px) {
+  .App {
+    /* Exemplo: padding menor em mobile */
+    padding: 8px;
+  }
+  /* Adicione regras responsivas específicas para mobile aqui */
+}

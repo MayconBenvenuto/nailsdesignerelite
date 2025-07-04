@@ -1,0 +1,12 @@
+/* Estilos globais do site */
+@import url('./responsive/global.mobile.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+/* ...adicione outros estilos globais aqui... */

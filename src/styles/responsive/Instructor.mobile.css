@@ -1,0 +1,8 @@
+/* Estilos responsivos para Instructor (mobile) */
+@media (max-width: 768px) {
+  .instructor {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Adicione regras responsivas específicas para mobile aqui */
+}

@@ -1,0 +1,8 @@
+/* Estilos responsivos para About (mobile) */
+@media (max-width: 768px) {
+  .about {
+    padding: 12px;
+    font-size: 1rem;
+  }
+  /* Adicione regras responsivas específicas para mobile aqui */
+}

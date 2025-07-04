@@ -1,0 +1,8 @@
+/* Estilos responsivos para Modules (mobile) */
+@media (max-width: 768px) {
+  .modules {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  /* Adicione regras responsivas específicas para mobile aqui */
+}
