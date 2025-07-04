@@ -58,16 +58,14 @@ const Hero = () => {
           Invista <span style={{ color: '#DC143C', fontWeight: 900 }}>R$79</span> em você e comece a ganhar até <span style={{ color: '#DC143C', fontWeight: 900 }}>R$4.000/mês</span> com Nails Design.
         </p>
         <h2 className="testimonial-video-title">Depoimento de uma de nossas alunas</h2>
-        <div style={{ display: 'flex', justifyContent: 'center', margin: '16px 0' }}>
+        <div style={{ position: 'relative', width: '100%', maxWidth: 400, margin: '16px auto', aspectRatio: '9/16' }}>
           <iframe
-            width="100%"
-            height="320"
             src="https://www.youtube.com/embed/r0DOaqETCVQ?autoplay=1&mute=1&loop=1&playlist=r0DOaqETCVQ&modestbranding=1&controls=0&rel=0"
             title="Depoimento de uma de nossas alunas"
             frameBorder="0"
             allow="autoplay; encrypted-media"
             allowFullScreen
-            style={{ borderRadius: 10, maxWidth: 400 }}
+            style={{ borderRadius: 10, position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
           ></iframe>
         </div>
         <a href="https://go.hotmart.com/H100473557A?ap=3259" target="_blank" rel="noopener noreferrer">
