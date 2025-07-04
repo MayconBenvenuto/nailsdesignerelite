@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import '../styles/Hero.css';
 
-// Vídeo hospedado no GitHub RAW - substitua <usuario>,<repo>,<branch> conforme seu repositório
-const VIDEO_URL = 'https://raw.githubusercontent.com/MayconBenvenuto/nailsdesignerelite/main/src/assets/videos/depoimento.mp4';
+// Vídeo hospedado em CDN via raw.githack para suportar range requests
+const VIDEO_URL = 'https://rawcdn.githack.com/MayconBenvenuto/nailsdesignerelite/main/src/assets/videos/depoimento.mp4';
 
 const Hero = () => {
   const videoRef = useRef(null);
