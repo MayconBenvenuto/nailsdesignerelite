@@ -76,9 +76,11 @@ const Hero = () => {
           <source src={VIDEO_URL} type="video/mp4" />
           Seu navegador não suporta o formato de vídeo.
         </video>
-        <button style={{ background: '#DC143C', color: '#fff', fontWeight: 700, fontSize: 18, boxShadow: '0 2px 8px #C71585', border: 'none', borderRadius: 50, padding: '14px 32px', marginTop: 8 }}>
-          Quero me inscrever agora
-        </button>
+        <a href="https://go.hotmart.com/H100473557A?ap=3259" target="_blank" rel="noopener noreferrer">
+          <button style={{ background: '#DC143C', color: '#fff', fontWeight: 700, fontSize: 18, boxShadow: '0 2px 8px #C71585', border: 'none', borderRadius: 50, padding: '14px 32px', marginTop: 8 }}>
+            Quero me inscrever agora
+          </button>
+        </a>
       </div>
     </section>
   );
