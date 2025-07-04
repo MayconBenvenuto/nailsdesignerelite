@@ -55,13 +55,20 @@ const Quiz = () => {
     const [quizFinished, setQuizFinished] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null);
 
+
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowPopup(true);
         }, 100); // Mostra o popup quase instantaneamente
-
         return () => clearTimeout(timer);
     }, []);
+
+    // Dispara o evento do Meta Pixel assim que o quiz é finalizado (quando o botão aparece)
+    useEffect(() => {
+        if (quizFinished && window.fbq) {
+            window.fbq('trackCustom', 'leadQualificadoQuiz');
+        }
+    }, [quizFinished]);
 
     const handleOptionClick = (index) => {
         setSelectedOption(index);
