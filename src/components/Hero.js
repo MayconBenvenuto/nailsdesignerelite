@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import '../styles/Hero.css';
 
 // Vídeo hospedado em CDN via raw.githack para suportar range requests
-const VIDEO_URL = 'https://rawcdn.githack.com/MayconBenvenuto/nailsdesignerelite/main/src/assets/videos/depoimento.mp4';
+const VIDEO_URL = 'https://rawcdn.githack.com/MayconBenvenuto/nailsdesignerelite/master/src/assets/videos/depoimento.mp4';
 
 const Hero = () => {
   const videoRef = useRef(null);
