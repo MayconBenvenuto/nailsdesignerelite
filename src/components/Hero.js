@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import '../styles/Hero.css';
-import videoDepoimento from '../assets/videos/depoimento.mp4';
+
+// Vídeo hospedado no GitHub RAW - substitua <usuario>,<repo>,<branch> conforme seu repositório
+const VIDEO_URL = 'https://raw.githubusercontent.com/MayconBenvenuto/nailsdesignerelite/main/src/assets/videos/depoimento.mp4';
 
 const Hero = () => {
   const videoRef = useRef(null);
@@ -68,11 +70,10 @@ const Hero = () => {
           loop
           muted
           autoPlay
-          onLoadedData={() => console.log('Vídeo carregado com sucesso')} // Debug: verifica se o vídeo carrega
-          onError={(e) => console.error('Erro ao carregar vídeo:', e)} // Debug: erros de carregamento
-          style={{ border: '2px dashed red', minHeight: 200 }} // Debug visual: borda e altura mínima
+          onLoadedData={() => console.log('Vídeo carregado com sucesso')} // Debug
+          onError={(e) => console.error('Erro ao carregar vídeo:', e)} // Debug
         >
-          <source src={videoDepoimento} type="video/mp4" />
+          <source src={VIDEO_URL} type="video/mp4" />
           Seu navegador não suporta o formato de vídeo.
         </video>
         <button style={{ background: '#DC143C', color: '#fff', fontWeight: 700, fontSize: 18, boxShadow: '0 2px 8px #C71585', border: 'none', borderRadius: 50, padding: '14px 32px', marginTop: 8 }}>
