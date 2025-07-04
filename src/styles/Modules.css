@@ -1,4 +1,121 @@
-/* Estilos do Modules */
-@import url('./responsive/Modules.mobile.css');
+/* Estilos do Modules - Mobile First */
 
-/* ...adicione aqui os estilos do Modules... */
+.modules {
+  /* Mobile styles */
+  background: var(--background);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.modules .container {
+  max-width: 100%;
+  padding: 0 16px;
+}
+
+.modules h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 24px 0;
+  line-height: 1.3;
+}
+
+.modules-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 100%;
+}
+
+.module-item {
+  background: var(--background-light);
+  padding: 20px 16px;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: var(--text-dark);
+  text-align: left;
+}
+
+.module-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  background: white;
+}
+
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+  .modules {
+    padding: 60px 0;
+  }
+  
+  .modules .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  .modules h2 {
+    font-size: 28px;
+    margin: 0 0 32px 0;
+  }
+  
+  .modules-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .module-item {
+    padding: 24px 20px;
+    font-size: 16px;
+  }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .modules {
+    padding: 80px 0;
+  }
+  
+  .modules .container {
+    max-width: 1000px;
+    padding: 0 32px;
+  }
+  
+  .modules h2 {
+    font-size: 32px;
+    margin: 0 0 40px 0;
+  }
+  
+  .modules-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  
+  .module-item {
+    padding: 28px 24px;
+    font-size: 18px;
+  }
+}
+
+/* Large Desktop (1440px+) */
+@media (min-width: 1440px) {
+  .modules .container {
+    max-width: 1200px;
+  }
+  
+  .modules h2 {
+    font-size: 36px;
+    margin: 0 0 48px 0;
+  }
+  
+  .modules-list {
+    gap: 32px;
+  }
+  
+  .module-item {
+    padding: 32px 28px;
+  }
+}

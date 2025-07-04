@@ -1,4 +1,50 @@
-/* Estilos do Footer */
-@import url('./responsive/Footer.mobile.css');
+/* Estilos do Footer - Mobile First */
 
-/* ...adicione aqui os estilos do Footer... */
+.footer {
+  /* Mobile styles */
+  background: var(--text-dark);
+  color: white;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 100%;
+  padding: 0 16px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+  .footer {
+    padding: 32px 0;
+  }
+  
+  .footer .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  .footer p {
+    font-size: 16px;
+  }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 40px 0;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    padding: 0 32px;
+  }
+}

@@ -1,8 +1,0 @@
-/* Estilos responsivos para index (mobile) */
-@media (max-width: 768px) {
-  body {
-    font-size: 1rem;
-    padding: 0;
-  }
-  /* Adicione regras responsivas específicas para mobile aqui */
-}

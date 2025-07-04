@@ -1,8 +1,46 @@
-/* Estilos responsivos para App (mobile) */
+/* Estilos responsivos para mobile - App */
+
+/* Media queries para dispositivos móveis */
 @media (max-width: 768px) {
-  .App {
-    /* Exemplo: padding menor em mobile */
-    padding: 8px;
+  /* Adicione aqui os estilos específicos para mobile */
+  
+  /* Exemplo de estilos básicos para mobile */
+  .container {
+    padding: 0 16px;
   }
-  /* Adicione regras responsivas específicas para mobile aqui */
+  
+  /* Ajustes de tipografia para mobile */
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  /* Botões responsivos */
+  .btn {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Estilos para telas muito pequenas */
+  .container {
+    padding: 0 12px;
+  }
+  
+  h1 {
+    font-size: 1.6rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
 }

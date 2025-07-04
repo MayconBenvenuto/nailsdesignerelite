@@ -1,9 +1,0 @@
-/* Estilos responsivos para Hero (mobile) */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 16px 0;
-  }
-  /* Adicione regras responsivas específicas para mobile aqui */
-}

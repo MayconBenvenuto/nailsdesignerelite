@@ -1,8 +1,0 @@
-/* Estilos globais responsivos para mobile */
-@media (max-width: 768px) {
-  body {
-    font-size: 1rem;
-    padding: 0 4px;
-  }
-  /* Adicione regras globais responsivas aqui */
-}

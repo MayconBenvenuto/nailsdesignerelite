@@ -13,13 +13,15 @@ const Modules = () => {
 
   return (
     <section id="modules" className="modules">
-      <h2>Módulos do Curso</h2>
-      <div className="modules-list">
-        {modules.map((module, index) => (
-          <div key={index} className="module-item">
-            {module}
-          </div>
-        ))}
+      <div className="container">
+        <h2>Módulos do Curso</h2>
+        <div className="modules-list">
+          {modules.map((module, index) => (
+            <div key={index} className="module-item">
+              {module}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

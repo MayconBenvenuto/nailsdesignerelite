@@ -19,14 +19,16 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials" className="testimonials">
-      <h2>O que nossas alunas dizem</h2>
-      <div className="testimonials-list">
-        {testimonials.map((testimonial, index) => (
-          <div key={index} className="testimonial-item">
-            <p>"{testimonial.text}"</p>
-            <h4>- {testimonial.name}</h4>
-          </div>
-        ))}
+      <div className="container">
+        <h2>O que nossas alunas dizem</h2>
+        <div className="testimonials-list">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="testimonial-item">
+              <p>"{testimonial.text}"</p>
+              <h4>- {testimonial.name}</h4>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

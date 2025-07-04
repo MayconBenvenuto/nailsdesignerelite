@@ -1,8 +1,0 @@
-/* Estilos responsivos para Footer (mobile) */
-@media (max-width: 768px) {
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
-  /* Adicione regras responsivas específicas para mobile aqui */
-}

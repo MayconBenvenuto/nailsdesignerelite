@@ -1,12 +1,114 @@
-/* Estilos globais do site */
-@import url('./responsive/global.mobile.css');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;700&display=swap');
+/* Estilos globais do site - Mobile First */
 
+/* Variáveis CSS para breakpoints e cores */
+:root {
+  --mobile: 320px;
+  --tablet: 768px;
+  --desktop: 1024px;
+  --large-desktop: 1440px;
+  
+  --primary-color: #E5A1AA; /* Rosa Principal */
+  --secondary-color: #FDECF0; /* Rosa Suave */
+  --text-color: #333333; /* Cinza Escuro */
+  --background-color: #FFFFFF; /* Branco */
+  --accent-color: #D4AF37; /* Dourado */
+  --font-headings: 'Playfair Display', serif;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos base - Mobile First */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', Arial, sans-serif;
-  background: #fff;
-  color: #222;
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 0 16px;
 }
 
-/* ...adicione outros estilos globais aqui... */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+  color: var(--primary-color);
+}
+
+/* Container principal */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Botão primário */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  padding: 12px 24px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d18fa1; /* Um tom de rosa um pouco mais escuro */
+}
+
+/* Utilitários responsivos */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.d-block { display: block; }
+.d-none { display: none; }
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+
+/* Breakpoint: Tablet (768px+) */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 0 24px;
+  }
+  
+  .container {
+    max-width: 750px;
+    padding: 0 24px;
+  }
+}
+
+/* Breakpoint: Desktop (1024px+) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+    padding: 0 32px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    padding: 0 32px;
+  }
+}
+
+/* Breakpoint: Large Desktop (1440px+) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

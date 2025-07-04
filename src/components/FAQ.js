@@ -12,7 +12,7 @@ const FAQItem = ({ faq, index, toggleFAQ }) => {
         {faq.question}
       </div>
       <div className="faq-answer">
-        {faq.answer}
+        <p>{faq.answer}</p>
       </div>
     </div>
   );
@@ -50,12 +50,14 @@ const FAQ = () => {
 
   return (
     <section id="faq" className="faqs">
+      <div className="container">
         <h2>Dúvidas Frequentes</h2>
         <div className="faq-list">
             {faqs.map((faq, index) => (
                 <FAQItem faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
             ))}
         </div>
+      </div>
     </section>
   );
 };

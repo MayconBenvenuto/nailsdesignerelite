@@ -4,7 +4,9 @@ import '../styles/Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>&copy; 2025 Nails Design Elite. Todos os direitos reservados.</p>
+      <div className="container">
+        <p>&copy; 2025 Nails Design Elite. Todos os direitos reservados.</p>
+      </div>
     </footer>
   );
 };

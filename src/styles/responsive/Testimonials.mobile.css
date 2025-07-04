@@ -1,8 +1,0 @@
-/* Estilos responsivos para Testimonials (mobile) */
-@media (max-width: 768px) {
-  .testimonials {
-    flex-direction: column;
-    gap: 16px;
-  }
-  /* Adicione regras responsivas específicas para mobile aqui */
-}

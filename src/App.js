@@ -1,7 +1,6 @@
 import React from 'react';
 import './styles/App.css';
 
-import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Modules from './components/Modules';
@@ -14,7 +13,6 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <Header />
       <Hero />
       <About />
       <Modules />
