@@ -8,11 +8,13 @@
   --desktop: 1024px;
   --large-desktop: 1440px;
   
-  --primary-color: #D4A3A4; /* Rosa Principal */
-  --secondary-color: #FDF5F6; /* Rosa Claro (Fundo) */
-  --text-color: #333333; /* Cinza Escuro */
+  --primary-color: #8A2BE2; /* Roxo: Criatividade, Luxo */
+  --secondary-color: #f5eefc; /* Lavanda bem claro: Suavidade */
+  --text-color: #333333; /* Cinza Escuro: Legibilidade */
   --background-color: #FFFFFF; /* Branco */
-  --accent-color: #C8A876; /* Dourado */
+  --accent-color: #C71585; /* Magenta: Destaque, Energia */
+  --cta-color: #DC143C; /* Vermelho: Ação, Urgência */
+
   --font-headings: 'Montserrat', sans-serif;
   --font-body: 'Open Sans', sans-serif;
 }
@@ -60,24 +62,23 @@ section {
 
 /* Botões com cantos bem arredondados para um look moderno */
 .btn-primary, button {
-  border-radius: 50px;
-}
-
-/* Botão primário */
-.btn-primary {
-  background-color: var(--primary-color);
+  background-color: var(--cta-color);
   color: var(--background-color);
   border: none;
-  padding: 12px 24px;
+  padding: 14px 28px;
   font-family: var(--font-body);
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(220, 20, 60, 0.3);
+  border-radius: 50px;
 }
 
-.btn-primary:hover {
-  background-color: #d18fa1; /* Um tom de rosa um pouco mais escuro */
+.btn-primary:hover, button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(220, 20, 60, 0.4);
+  background-color: #e22a4f; /* Tom de vermelho um pouco mais claro */
 }
 
 /* Utilitários responsivos */
