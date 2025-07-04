@@ -10,10 +10,12 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+import Quiz from './components/Quiz';
 
 function App() {
   return (
     <div className="App">
+      <Quiz />
       <Hero />
       <About />
       <Modules />
