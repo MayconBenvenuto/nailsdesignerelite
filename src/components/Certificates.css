@@ -1,0 +1,30 @@
+.certificates {
+    padding: 40px 0;
+    background-color: var(--secondary-color);
+  }
+  
+  .certificates-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .mySwiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mySwiper .swiper-slide img {
+    display: block;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+  

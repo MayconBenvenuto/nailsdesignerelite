@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap');
 /* Estilos globais do site - Mobile First */
 
 /* Variáveis CSS para breakpoints e cores */
@@ -8,13 +8,13 @@
   --desktop: 1024px;
   --large-desktop: 1440px;
   
-  --primary-color: #E5A1AA; /* Rosa Principal */
-  --secondary-color: #FDECF0; /* Rosa Suave */
+  --primary-color: #D4A3A4; /* Rosa Principal */
+  --secondary-color: #FDF5F6; /* Rosa Claro (Fundo) */
   --text-color: #333333; /* Cinza Escuro */
   --background-color: #FFFFFF; /* Branco */
-  --accent-color: #D4AF37; /* Dourado */
-  --font-headings: 'Playfair Display', serif;
-  --font-body: 'Montserrat', sans-serif;
+  --accent-color: #C8A876; /* Dourado */
+  --font-headings: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
 }
 
 /* Reset básico */
@@ -46,6 +46,21 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+/* Arredondamento para as seções principais */
+section {
+  border-radius: 20px;
+}
+
+/* Arredondamento sutil para elementos de conteúdo */
+.card, .box, input, textarea, select {
+  border-radius: 12px;
+}
+
+/* Botões com cantos bem arredondados para um look moderno */
+.btn-primary, button {
+  border-radius: 50px;
 }
 
 /* Botão primário */
@@ -111,4 +126,10 @@ h1, h2, h3, h4, h5, h6 {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Classe para texto branco e negrito */
+.text-white-bold {
+  color: #fff !important;
+  font-weight: bold !important;
 }

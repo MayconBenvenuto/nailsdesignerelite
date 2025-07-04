@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Modules from './components/Modules';
 import Instructor from './components/Instructor';
+import Certificates from './components/Certificates';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import CTA from './components/CTA';
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Modules />
       <Instructor />
+      <Certificates />
       <Testimonials />
       <FAQ />
       <CTA />
