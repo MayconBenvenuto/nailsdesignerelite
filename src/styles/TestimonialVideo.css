@@ -1,0 +1,18 @@
+.testimonial-video-container {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.testimonial-video-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimonial-video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

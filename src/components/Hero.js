@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Hero.css';
+import videoDepoimento from '../assets/videos/depoimento.mp4';
 
 const Hero = () => {
   return (
@@ -12,6 +13,11 @@ const Hero = () => {
           Minhas alunas estão faturando alto fazendo unhas em casa com um método simples e acessível.<br />
           Invista <span style={{ color: '#C71585', fontWeight: 900 }}>R$79</span> em você e comece a ganhar até <span style={{ color: '#DC143C', fontWeight: 900 }}>R$4.000/mês</span> com Nails Design.
         </p>
+        <h2 className="testimonial-video-title">Depoimento de uma de nossas alunas</h2>
+        <video className="testimonial-video" autoPlay loop muted playsInline style={{marginBottom: '16px'}}>
+            <source src={videoDepoimento} type="video/mp4" />
+            Seu navegador não suporta o formato de vídeo.
+        </video>
         <button style={{ background: '#DC143C', color: '#fff', fontWeight: 700, fontSize: 18, boxShadow: '0 2px 8px #C71585', border: 'none', borderRadius: 50, padding: '14px 32px', marginTop: 8 }}>
           Quero me inscrever agora
         </button>
