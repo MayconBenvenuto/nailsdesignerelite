@@ -53,18 +53,24 @@ const Quiz = () => {
     const [showPopup, setShowPopup] = useState(false);
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [quizFinished, setQuizFinished] = useState(false);
+    const [selectedOption, setSelectedOption] = useState(null);
 
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowPopup(true);
-        }, 3000); // Mostra o popup após 3 segundos
+        }, 100); // Mostra o popup quase instantaneamente
 
         return () => clearTimeout(timer);
     }, []);
 
-    const handleAnswerClick = () => {
+    const handleOptionClick = (index) => {
+        setSelectedOption(index);
+    };
+
+    const handleNextClick = () => {
         if (currentQuestion < quizData.length - 1) {
             setCurrentQuestion(currentQuestion + 1);
+            setSelectedOption(null);
         } else {
             setQuizFinished(true);
         }
@@ -75,15 +81,13 @@ const Quiz = () => {
         if (window.fbq) {
             window.fbq('trackCustom', 'leadQualificadoQuiz');
         }
-        console.log("Evento leadQualificadoQuiz enviado!"); // Para teste
         setShowPopup(false); // Fecha o popup
-        // Opcional: redirecionar para a seção de CTA
-        document.getElementById('cta').scrollIntoView({ behavior: 'smooth' });
+        // Removido scroll para CTA
     };
-    
+
     const handleClosePopup = () => {
         setShowPopup(false);
-    }
+    };
 
     if (!showPopup) {
         return null;
@@ -99,16 +103,31 @@ const Quiz = () => {
                         <h2>🚨 Teste Rápido: Você Vai Continuar Reclamando da Vida ou Vai Lucrar com o Que Ama?</h2>
                         <p className="quiz-subtitle">⚠ Este não é um quiz qualquer. É um despertador. Responda com sinceridade e descubra se você tem o perfil para viver do mundo das unhas — mesmo começando do zero.</p>
                         
-                        <p className="quiz-question">{quizData[currentQuestion].question}</p>
+                        <p className="quiz-question"><span className="quiz-question-highlight">{quizData[currentQuestion].question}</span></p>
                         
                         <div className="quiz-options">
                             {quizData[currentQuestion].options.map((option, index) => (
-                                <button key={index} onClick={handleAnswerClick}>
+                                <button
+                                    key={index}
+                                    className={selectedOption === index ? 'selected' : ''}
+                                    onClick={() => handleOptionClick(index)}
+                                    style={{
+                                        borderColor: selectedOption === index ? '#DC143C' : undefined,
+                                        background: selectedOption === index
+                                            ? 'linear-gradient(90deg, #DC143C 60%, #6A0DAD 100%)'
+                                            : undefined,
+                                        color: selectedOption === index ? '#fff' : undefined,
+                                    }}
+                                >
                                     {`${String.fromCharCode(65 + index)}) ${option}`}
                                 </button>
                             ))}
                         </div>
-
+                        {selectedOption !== null && (
+                            <button className="next-button" onClick={handleNextClick}>
+                                {currentQuestion < quizData.length - 1 ? 'Próximo' : 'Finalizar'}
+                            </button>
+                        )}
                         <div className="progress-bar-container">
                             <div 
                                 className="progress-bar" 
