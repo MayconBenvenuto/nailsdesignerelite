@@ -80,16 +80,11 @@ const Quiz = () => {
             setSelectedOption(null);
         } else {
             setQuizFinished(true);
+            // Dispara o evento do Pixel do Meta quando finaliza o quiz
+            if (window.fbq) {
+                window.fbq('trackCustom', 'leadQualificadoQuiz');
+            }
         }
-    };
-
-    const handleShowResultClick = () => {
-        // Dispara o evento do Pixel do Meta
-        if (window.fbq) {
-            window.fbq('trackCustom', 'leadQualificadoQuiz');
-        }
-        setShowPopup(false); // Fecha o popup
-        // Removido scroll para CTA
     };
 
     const handleClosePopup = () => {
@@ -146,10 +141,12 @@ const Quiz = () => {
                     <div className="quiz-final-message">
                         <h3>Você está a um passo de mudar sua realidade.</h3>
                         <p>Suas respostas mostram que você tem o desejo e o potencial para transformar sua paixão em uma fonte de renda e liberdade.</p>
-                        <p>Clique no botão abaixo para ver o resultado e descobrir como dar o próximo passo.</p>
-                        <button className="result-button" onClick={handleShowResultClick}>
-                            Ver meu resultado
-                        </button>
+                        <p>Clique no botão abaixo e comece agora sua jornada de transformação!</p>
+                        <a href="https://go.hotmart.com/H100473557A?ap=3259" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", display: "block"}}>
+                            <button className="result-button" style={{ background: 'linear-gradient(90deg, #28a745 0%, #20c997 100%)', color: '#fff', fontWeight: 700, boxShadow: '0 6px 20px rgba(40, 167, 69, 0.4)' }}>
+                                Quero me inscrever agora!
+                            </button>
+                        </a>
                     </div>
                 )}
             </div>

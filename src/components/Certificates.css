@@ -1,22 +1,48 @@
 .certificates {
     padding: 40px 0;
-    background-color: var(--secondary-color);
+    background: linear-gradient(135deg, #8B0080 0%, #4B0082 50%, #8B0080 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+.certificates::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+      radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: 1;
   }
   
   .certificates-title {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 2rem;
-    color: var(--primary-color);
+    font-size: 2.5rem;
+    color: #FFD700;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
   }
   
   .mySwiper .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.95);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+    padding: 20px;
   }
   
   .mySwiper .swiper-slide img {

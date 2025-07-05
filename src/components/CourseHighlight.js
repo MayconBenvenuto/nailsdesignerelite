@@ -125,7 +125,7 @@ const CourseHighlight = () => {
                   
                   {selectedAnswers[currentStep] && (
                     <button className="next-quiz-button" onClick={nextStep}>
-                      {currentStep === quizSteps.length ? 'Ver Resultado' : 'Próxima'}
+                      {currentStep === quizSteps.length ? 'Finalizar' : 'Próxima'}
                     </button>
                   )}
                   
@@ -134,6 +134,11 @@ const CourseHighlight = () => {
                       <p className="completion-text">
                         Parabéns! Você demonstrou estar pronta para esta transformação!
                       </p>
+                      <a href="https://go.hotmart.com/H100473557A?ap=3259" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", display: "block", marginTop: "15px"}}>
+                        <button style={{ background: 'linear-gradient(90deg, #28a745 0%, #20c997 100%)', color: '#fff', fontWeight: 700, fontSize: 16, boxShadow: '0 6px 20px rgba(40, 167, 69, 0.4)', border: 'none', borderRadius: 50, padding: '12px 24px', width: '100%', cursor: 'pointer' }}>
+                          Quero me inscrever agora!
+                        </button>
+                      </a>
                     </div>
                   )}
                 </div>

@@ -7,9 +7,10 @@ const CTA = () => {
       <div className="container">
         <h2>Pronta para se tornar uma referência?</h2>
         <p>Garanta sua vaga agora e comece sua jornada para o sucesso.</p>
-        {/* Botão agora abre o site de inscrição */}
-        <a href="https://www.naildesignerelite.com.br" target="_blank" rel="noopener noreferrer">
-          <button>Quero me inscrever com desconto</button>
+        <a href="https://go.hotmart.com/H100473557A?ap=3259" target="_blank" rel="noopener noreferrer">
+          <button style={{ background: 'linear-gradient(90deg, #28a745 0%, #20c997 100%)', color: '#fff', fontWeight: 700, fontSize: 16, boxShadow: '0 6px 20px rgba(40, 167, 69, 0.4)' }}>
+            Quero me inscrever agora!
+          </button>
         </a>
       </div>
     </section>

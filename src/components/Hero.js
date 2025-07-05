@@ -69,7 +69,7 @@ const Hero = () => {
           ></iframe>
         </div>
         <a href="https://go.hotmart.com/H100473557A?ap=3259" target="_blank" rel="noopener noreferrer">
-          <button style={{ background: '#DC143C', color: '#fff', fontWeight: 700, fontSize: 18, boxShadow: '0 2px 8px #C71585', border: 'none', borderRadius: 50, padding: '14px 32px', marginTop: 8 }}>
+          <button style={{ background: 'linear-gradient(90deg, #28a745 0%, #20c997 100%)', color: '#fff', fontWeight: 700, fontSize: 18, boxShadow: '0 6px 20px rgba(40, 167, 69, 0.4)', border: 'none', borderRadius: 50, padding: '14px 32px', marginTop: 8, cursor: 'pointer' }}>
             Quero me inscrever agora!
           </button>
         </a>

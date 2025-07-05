@@ -8,12 +8,17 @@
   --desktop: 1024px;
   --large-desktop: 1440px;
   
-  --primary-color: #8A2BE2; /* Roxo: Criatividade, Luxo */
-  --secondary-color: #f5eefc; /* Lavanda bem claro: Suavidade */
-  --text-color: #333333; /* Cinza Escuro: Legibilidade */
-  --background-color: #FFFFFF; /* Branco */
-  --accent-color: #C71585; /* Magenta: Destaque, Energia */
-  --cta-color: #DC143C; /* Vermelho: Ação, Urgência */
+  --primary-color: #8B0080; /* Roxo primário CourseHighlight */
+  --secondary-color: #4B0082; /* Roxo secundário CourseHighlight */
+  --accent-color: #FFD700; /* Amarelo destaque CourseHighlight */
+  --button-green: #28a745; /* Verde para botões */
+  --button-green-hover: #20c997; /* Verde hover para botões */
+  --text-color: #FFFFFF; /* Texto branco */
+  --text-dark: #8B0080; /* Texto roxo escuro */
+  --background-color: #8B0080; /* Fundo roxo */
+  --background-light: rgba(255, 255, 255, 0.1); /* Fundo claro translúcido */
+  --card-background: rgba(255, 255, 255, 0.95); /* Fundo dos cards */
+  --border-color: rgba(255, 255, 255, 0.2); /* Bordas */
 
   --font-headings: 'Montserrat', sans-serif;
   --font-body: 'Open Sans', sans-serif;
@@ -33,14 +38,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background-color);
+  background: linear-gradient(135deg, #8B0080 0%, #4B0082 50%, #8B0080 100%);
   color: var(--text-color);
   padding: 0 16px;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -1;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-headings);
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 
 /* Container principal */
