@@ -35,7 +35,7 @@
   cursor: pointer;
   transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 2px 8px rgba(199, 21, 133, 0.10);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .next-button:hover {
@@ -118,6 +118,7 @@
 }
 
 
+
 .quiz-options {
   list-style: none;
   padding: 0;
@@ -126,7 +127,6 @@
   flex-direction: column;
   gap: 0.8rem;
 }
-
 
 .quiz-options button {
   background: linear-gradient(90deg, #C71585 60%, #8A2BE2 100%);
@@ -141,6 +141,9 @@
   font-weight: 500;
   transition: background 0.2s, border-color 0.2s, color 0.2s;
   box-shadow: 0 2px 8px rgba(199, 21, 133, 0.08);
+  text-transform: none;
+  font-family: 'Inter', 'Roboto', 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 0.01em;
 }
 
 .quiz-options button:hover {
@@ -196,7 +199,7 @@
   border-radius: 50px;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   box-shadow: 0 4px 15px rgba(199, 21, 133, 0.15);
 }
 
@@ -206,15 +209,39 @@
   box-shadow: 0 6px 20px rgba(138, 43, 226, 0.18);
 }
 
+
 .close-button {
     position: absolute;
-    top: 10px;
-    right: 15px;
-    background: transparent;
+    top: 8px;
+    right: 8px;
+    background: rgba(255,255,255,0.85);
     border: none;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     cursor: pointer;
-    color: #888;
+    color: #C71585;
+    z-index: 10;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(199, 21, 133, 0.10);
+    transition: background 0.2s;
+}
+.close-button:active, .close-button:focus {
+    background: #F8E6FF;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+  .close-button {
+    top: 4px;
+    right: 4px;
+    font-size: 2rem;
+    width: 32px;
+    height: 32px;
+  }
 }
 
 /* Responsive Design */
@@ -235,6 +262,9 @@
   .quiz-options button {
     padding: 0.6rem;
     font-size: 0.85rem;
+    font-family: 'Inter', 'Roboto', 'Segoe UI', Arial, sans-serif;
+    text-transform: none;
+    letter-spacing: 0.01em;
   }
 
   .result-button {
