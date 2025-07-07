@@ -103,7 +103,7 @@ const Quiz = () => {
                 {!quizFinished ? (
                     <>
                         <h2>Quiz de Carreira: Mundo das Unhas.</h2>
-                        <p className="quiz-subtitle">⚠ Este não é um quiz qualquer. É um despertador. Responda com sinceridade e descubra se você tem o perfil para viver do mundo das unhas — mesmo começando do zero.</p>
+                        <p className="quiz-subheadline">O primeiro passo para realizar seu sonho de viver do mundo das unhas.</p>
                         
                         <p className="quiz-question"><span className="quiz-question-highlight">{quizData[currentQuestion].question}</span></p>
                         
