@@ -10,7 +10,20 @@ const Footer = () => {
             <h3><span className="fire-emoji">🔥</span> Nail Designer Elite</h3>
             <p>Transforme sua paixão em uma carreira lucrativa e bem-sucedida com nosso método comprovado por mais de 2.000 alunas.</p>
             <div className="footer-cta">
-              <a href="https://go.hotmart.com/H100473557A?ap=3259" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://go.hotmart.com/H100473557A?ap=3259"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  if (window.fbq) {
+                    window.fbq('track', 'AddToCart', {
+                      content_name: 'Nail Designer Elite',
+                      value: 79,
+                      currency: 'BRL'
+                    });
+                  }
+                }}
+              >
                 <button>Quero me inscrever agora!</button>
               </a>
             </div>

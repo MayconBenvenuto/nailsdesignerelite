@@ -66,7 +66,22 @@ const Hero = () => {
             className="hero-video-iframe"
           ></iframe>
         </div>
-        <a href="https://go.hotmart.com/H100473557A?ap=3259" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="600">
+        <a
+          href="https://go.hotmart.com/H100473557A?ap=3259"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          onClick={() => {
+            if (window.fbq) {
+              window.fbq('track', 'AddToCart', {
+                content_name: 'Nail Designer Elite',
+                value: 79,
+                currency: 'BRL'
+              });
+            }
+          }}
+        >
           <button className="hero-cta-btn">
             Quero me inscrever agora!
           </button>
