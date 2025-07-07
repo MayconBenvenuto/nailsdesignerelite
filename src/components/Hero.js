@@ -48,28 +48,26 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="hero" style={{ background: 'linear-gradient(135deg, #8A2BE2 60%, #C71585 100%)', borderRadius: 20, boxShadow: '0 8px 32px 0 rgba(138,43,226,0.15)' }}>
+    <section className="hero">
       <div className="hero-content">
-        <h1 className="text-red-bold" style={{ marginBottom: 16, color: '#DC143C', textShadow: '0 2px 8px #6A0DAD' }}>
-          Você Vai se Arrepender de Não Começar Hoje
-        </h1>
-        <p style={{ color: '#fff', fontWeight: 'bold', marginBottom: 16, fontSize: 20, textShadow: '0 1px 6px #6A0DAD' }}>
+        <h1 data-aos="fade-up">Você Vai se Arrepender de Não Começar Hoje</h1>
+        <p className="hero-description" data-aos="fade-up" data-aos-delay="150">
           Minhas alunas estão faturando alto fazendo unhas em casa com um método simples e acessível.<br />
-          Invista <span style={{ color: '#DC143C', fontWeight: 900 }}>R$79</span> em você e comece a ganhar até <span style={{ color: '#DC143C', fontWeight: 900 }}>R$4.000/mês</span> com Nails Design.
+          Invista <span className="valor-destaque">R$79</span> em você e comece a ganhar até <span className="valor-destaque">R$4.000/mês</span> com Nails Design.
         </p>
-        <h2 className="testimonial-video-title">DEPOIMENTO DE UMA DE NOSSAS ALUNAS:</h2>
-        <div style={{ position: 'relative', width: '100%', maxWidth: 400, margin: '16px auto', aspectRatio: '9/16' }}>
+        <h2 className="testimonial-video-title" data-aos="fade-up" data-aos-delay="300">DEPOIMENTO DE UMA DE NOSSAS ALUNAS:</h2>
+        <div className="hero-video-wrapper" data-aos="zoom-in" data-aos-delay="450">
           <iframe
             src="https://www.youtube.com/embed/r0DOaqETCVQ?autoplay=1&mute=1&loop=1&playlist=r0DOaqETCVQ&modestbranding=1&controls=0&rel=0"
             title="Depoimento de uma de nossas alunas"
             frameBorder="0"
             allow="autoplay; encrypted-media"
             allowFullScreen
-            style={{ borderRadius: 10, position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+            className="hero-video-iframe"
           ></iframe>
         </div>
-        <a href="https://go.hotmart.com/H100473557A?ap=3259" target="_blank" rel="noopener noreferrer">
-          <button style={{ background: 'linear-gradient(90deg, #28a745 0%, #20c997 100%)', color: '#fff', fontWeight: 700, fontSize: 18, boxShadow: '0 6px 20px rgba(40, 167, 69, 0.4)', border: 'none', borderRadius: 50, padding: '14px 32px', marginTop: 8, cursor: 'pointer' }}>
+        <a href="https://go.hotmart.com/H100473557A?ap=3259" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="600">
+          <button className="hero-cta-btn">
             Quero me inscrever agora!
           </button>
         </a>

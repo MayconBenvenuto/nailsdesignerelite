@@ -54,10 +54,10 @@ const CourseHighlight = () => {
         <div className="course-highlight-content">
           {/* Header */}
           <div className="course-highlight-header">
-            <h1 className="course-highlight-title">
-              <span className="fire-emoji">🔥</span> De Zero a Nail Designer Lucrativa em Apenas 30 Dias
+            <h1 className="course-highlight-title" data-aos="fade-up">
+              <span className="fire-emoji" aria-label="Fogo" role="img">🔥</span> De Zero a Nail Designer Lucrativa em Apenas 30 Dias
             </h1>
-            <p className="course-highlight-subtitle">
+            <p className="course-highlight-subtitle" data-aos="fade-up" data-aos-delay="150">
               Mais de 2.000 mulheres já fizeram esse teste e descobriram o 
               caminho para faturar de casa com Nails Design – mesmo sem 
               experiência.

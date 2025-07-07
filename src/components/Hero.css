@@ -14,6 +14,7 @@
 .hero-content h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  color: #FFD700; /* Cor amarela para o título */
 }
 
 .hero-content p {

@@ -14,10 +14,10 @@ const Modules = () => {
   return (
     <section id="modules" className="modules">
       <div className="container">
-        <h2>Módulos do Curso</h2>
+        <h2 data-aos="fade-up">Módulos do Curso</h2>
         <div className="modules-list">
           {modules.map((module, index) => (
-            <div key={index} className="module-item">
+            <div key={index} className="module-item" data-aos="fade-up" data-aos-delay={100 + index * 100}>
               {module}
             </div>
           ))}

@@ -8,10 +8,10 @@ const FAQItem = ({ faq, index, toggleFAQ }) => {
       key={index}
       onClick={() => toggleFAQ(index)}
     >
-      <div className="faq-question">
+      <div className="faq-question" tabIndex={0} aria-expanded={faq.open} aria-controls={`faq-answer-${index}`}> 
         {faq.question}
       </div>
-      <div className="faq-answer">
+      <div className="faq-answer" id={`faq-answer-${index}`} aria-hidden={!faq.open}>
         <p>{faq.answer}</p>
       </div>
     </div>
@@ -51,10 +51,12 @@ const FAQ = () => {
   return (
     <section id="faq" className="faqs">
       <div className="container">
-        <h2>Dúvidas Frequentes</h2>
+        <h2 data-aos="fade-up">Dúvidas Frequentes</h2>
         <div className="faq-list">
             {faqs.map((faq, index) => (
-                <FAQItem faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
+                <div data-aos="fade-up" data-aos-delay={index * 100} key={index}>
+                  <FAQItem faq={faq} index={index} toggleFAQ={toggleFAQ} />
+                </div>
             ))}
         </div>
       </div>

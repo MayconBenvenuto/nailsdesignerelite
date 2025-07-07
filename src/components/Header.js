@@ -5,7 +5,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <div className="logo">Logo</div>
+        <div className="logo" aria-label="Nail Designer Elite">
+          <img src="/favicon.png" alt="Logo Nail Designer Elite" style={{height:32}} />
+        </div>
         <nav>
           <ul>
             <li><a href="#about">Sobre</a></li>

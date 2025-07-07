@@ -31,8 +31,9 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>&copy; 2025 Nails Design Elite. Todos os direitos reservados.</p>
           <p>
-            <a href="#privacy" className="footer-link">Política de Privacidade</a> | 
-            <a href="#terms" className="footer-link">Termos de Uso</a>
+            <a href="/privacidade.html" className="footer-link">Política de Privacidade</a> | 
+            <a href="/termos.html" className="footer-link">Termos de Uso</a> |
+            <a href="https://wa.me/5599999999999" className="footer-link" target="_blank" rel="noopener noreferrer" aria-label="Contato via WhatsApp">Contato via WhatsApp</a>
           </p>
         </div>
       </div>

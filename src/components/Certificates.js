@@ -25,7 +25,7 @@ const certificates = [
 const Certificates = () => {
   return (
     <section className="certificates">
-      <h2 className="certificates-title">Nossas Alunas</h2>
+      <h2 className="certificates-title" data-aos="fade-up">Nossas Alunas</h2>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -40,9 +40,9 @@ const Certificates = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {certificates.map(cert => (
+        {certificates.map((cert, idx) => (
           <SwiperSlide key={cert.id}>
-            <img src={cert.image} alt={cert.alt} />
+            <img src={cert.image} alt={cert.alt} loading="lazy" style={{borderRadius:12}} data-aos="zoom-in" data-aos-delay={idx * 100} />
           </SwiperSlide>
         ))}
       </Swiper>
