@@ -7,10 +7,8 @@ const CTA = () => {
       <div className="container">
         <h2>Pronta para se tornar uma referência?</h2>
         <p>Garanta sua vaga agora e comece sua jornada para o sucesso.</p>
-        <a
-          href="https://go.hotmart.com/H100473557A?ap=3259"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          style={{ background: 'linear-gradient(90deg, #28a745 0%, #20c997 100%)', color: '#fff', fontWeight: 700, fontSize: 16, boxShadow: '0 6px 20px rgba(40, 167, 69, 0.4)' }}
           onClick={() => {
             if (window.fbq) {
               window.fbq('track', 'AddToCart', {
@@ -19,12 +17,11 @@ const CTA = () => {
                 currency: 'BRL'
               });
             }
+            window.open('https://go.hotmart.com/H100473557A?ap=3259', '_blank', 'noopener,noreferrer');
           }}
         >
-          <button style={{ background: 'linear-gradient(90deg, #28a745 0%, #20c997 100%)', color: '#fff', fontWeight: 700, fontSize: 16, boxShadow: '0 6px 20px rgba(40, 167, 69, 0.4)' }}>
-            Quero me inscrever agora!
-          </button>
-        </a>
+          Quero me inscrever agora!
+        </button>
       </div>
     </section>
   );

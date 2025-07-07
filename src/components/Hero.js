@@ -66,10 +66,8 @@ const Hero = () => {
             className="hero-video-iframe"
           ></iframe>
         </div>
-        <a
-          href="https://go.hotmart.com/H100473557A?ap=3259"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          className="hero-cta-btn"
           data-aos="fade-up"
           data-aos-delay="600"
           onClick={() => {
@@ -80,12 +78,11 @@ const Hero = () => {
                 currency: 'BRL'
               });
             }
+            window.open('https://go.hotmart.com/H100473557A?ap=3259', '_blank', 'noopener,noreferrer');
           }}
         >
-          <button className="hero-cta-btn">
-            Quero me inscrever agora!
-          </button>
-        </a>
+          Quero me inscrever agora!
+        </button>
       </div>
     </section>
   );
