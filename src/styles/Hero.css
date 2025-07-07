@@ -82,7 +82,7 @@
 }
 
 .testimonial-video-title {
-  color: var(--text-dark) !important;
+  color: #FFD700 !important; /* Amarelo */
   font-size: 18px !important;
   margin-bottom: 12px !important;
   font-weight: 600;
