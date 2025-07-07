@@ -102,7 +102,7 @@ const Quiz = () => {
                 
                 {!quizFinished ? (
                     <>
-                        <h2>🚨 Teste Rápido: Você Vai Continuar Reclamando da Vida ou Vai Lucrar com o Que Ama?</h2>
+                        <h2>Quiz de Carreira: Mundo das Unhas.</h2>
                         <p className="quiz-subtitle">⚠ Este não é um quiz qualquer. É um despertador. Responda com sinceridade e descubra se você tem o perfil para viver do mundo das unhas — mesmo começando do zero.</p>
                         
                         <p className="quiz-question"><span className="quiz-question-highlight">{quizData[currentQuestion].question}</span></p>
