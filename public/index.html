@@ -4,7 +4,61 @@
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#000000" />
+    
+    <!-- DNS Prefetch para recursos externos -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//connect.facebook.net">
+    
+    <!-- Preconnect para recursos críticos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- CSS Crítico Inline -->
+    <style>
+      /* CSS crítico para above-the-fold */
+      * { 
+        box-sizing: border-box; 
+        margin: 0; 
+        padding: 0; 
+      }
+      body { 
+        margin: 0; 
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      #root { 
+        min-height: 100vh; 
+      }
+      .hero { 
+        min-height: 100vh; 
+        display: flex; 
+        align-items: center;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      /* Loading spinner para melhorar percepção de carregamento */
+      .loading-spinner {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #667eea;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        z-index: 9999;
+      }
+      @keyframes spin {
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg); }
+      }
+    </style>
     <meta
       name="description"
       content="Curso Nail Designer de Elite: aprenda técnicas modernas, conquiste clientes e transforme sua paixão em uma carreira lucrativa."
@@ -54,7 +108,22 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Loading spinner -->
+    <div id="loading-spinner" class="loading-spinner"></div>
     <div id="root"></div>
+    
+    <!-- Script para remover loading spinner quando React carregar -->
+    <script>
+      // Remove loading spinner quando o DOM estiver pronto
+      document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+          const spinner = document.getElementById('loading-spinner');
+          if (spinner) {
+            spinner.style.display = 'none';
+          }
+        }, 1000);
+      });
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

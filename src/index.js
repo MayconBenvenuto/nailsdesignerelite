@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/global.css';
+import './styles/critical.css';
 import './index.css';
-
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// Scroll suave para navegação por âncoras e inicialização do AOS
+// Configuração básica sem medições complexas de performance
 if (typeof window !== 'undefined') {
   document.addEventListener('DOMContentLoaded', function () {
     // Scroll suave
@@ -24,24 +24,38 @@ if (typeof window !== 'undefined') {
         }
       });
     }
+    
     // Inicializa AOS
     AOS.init({
-      duration: 900,
+      duration: 600,
       once: true,
       offset: 60,
       easing: 'ease-in-out',
+      disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
     });
+  });
+  
+  // Remove loading spinner quando React renderizar
+  window.addEventListener('load', () => {
+    const spinner = document.getElementById('loading-spinner');
+    if (spinner) {
+      setTimeout(() => {
+        spinner.style.opacity = '0';
+        setTimeout(() => {
+          spinner.style.display = 'none';
+        }, 300);
+      }, 500);
+    }
   });
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Web Vitals básico
+reportWebVitals(console.log);
