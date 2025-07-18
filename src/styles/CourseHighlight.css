@@ -301,6 +301,63 @@
   }
 }
 
+/* Centralized Benefits Styles */
+.course-highlight-benefits {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.course-highlight-benefits .benefit-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.course-highlight-benefits .benefit-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.course-highlight-benefits .check-icon {
+  color: #28a745;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.course-highlight-benefits .benefit-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: white;
+}
+
+.cta-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta-section button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.5) !important;
+}
+
 @media (max-width: 480px) {
   .course-highlight-title {
     font-size: 1.6rem;
@@ -310,13 +367,21 @@
     font-size: 1rem;
   }
   
-  .quiz-option {
-    font-size: 0.85rem;
-    padding: 0.7rem 0.8rem;
+  .course-highlight-benefits {
+    padding: 0 1rem;
   }
   
-  .next-quiz-button {
-    font-size: 0.9rem;
-    padding: 0.7rem 1.5rem;
+  .course-highlight-benefits .benefit-item {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .course-highlight-benefits .benefit-content h3 {
+    font-size: 1rem;
+  }
+  
+  .cta-section button {
+    font-size: 16px !important;
+    padding: 12px 25px !important;
   }
 }

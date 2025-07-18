@@ -50,10 +50,10 @@ const Modules = () => {
                   style={{ marginTop: '16px', maxWidth: '100%', borderRadius: '8px', boxShadow: '0 2px 12px rgba(0,0,0,0.10)' }}
                 />
               )}
-              {module === "Banho de Fibra" && (
+              {module === "Alongamento em Fibra" && (
                 <img 
                   src={modulo4Img} 
-                  alt="Banho de Fibra" 
+                  alt="Alongamento em Fibra" 
                   className="module-image"
                   style={{ marginTop: '16px', maxWidth: '100%', borderRadius: '8px', boxShadow: '0 2px 12px rgba(0,0,0,0.10)' }}
                 />

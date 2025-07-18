@@ -4,7 +4,7 @@ import { useWebVitals } from './hooks/usePerformance';
 
 // Componentes críticos carregados imediatamente
 import Hero from './components/Hero';
-import Quiz from './components/Quiz';
+// import Quiz from './components/Quiz';
 
 // Componentes lazy-loaded (versão simplificada)
 const About = lazy(() => import('./components/About'));
@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App">
       {/* Componentes críticos */}
-      <Quiz />
+      {/* <Quiz /> */}
       <Hero />
       
       {/* Componentes com lazy loading simples */}
