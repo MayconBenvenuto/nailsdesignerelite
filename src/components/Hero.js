@@ -78,7 +78,7 @@ const Hero = () => {
                 currency: 'BRL'
               });
             }
-            window.open('https://go.hotmart.com/H100473557A?ap=3259', '_blank', 'noopener,noreferrer');
+            window.open('https://pay.hotmart.com/M88990157L?off=vioyo3c2&checkoutMode=10&ref=H100473557A&bid=1752798014304', '_blank', 'noopener,noreferrer');
           }}
         >
           Quero me inscrever agora!
