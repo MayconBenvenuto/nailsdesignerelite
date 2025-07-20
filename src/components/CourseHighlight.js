@@ -40,25 +40,6 @@ const CourseHighlight = () => {
               </div>
             </div>
 
-            {/* Call to Action */}
-            <div className="cta-section">
-              <a href="https://go.hotmart.com/H100473557A?ap=3259" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", display: "block", marginTop: "30px"}}>
-                <button style={{ 
-                  background: 'linear-gradient(90deg, #28a745 0%, #20c997 100%)', 
-                  color: '#fff', 
-                  fontWeight: 700, 
-                  fontSize: 18, 
-                  boxShadow: '0 6px 20px rgba(40, 167, 69, 0.4)', 
-                  border: 'none', 
-                  borderRadius: 50, 
-                  padding: '15px 35px', 
-                  cursor: 'pointer',
-                  transition: 'all 0.3s ease'
-                }}>
-                  Quero me inscrever agora!
-                </button>
-              </a>
-            </div>
           </div>
         </div>
       </div>

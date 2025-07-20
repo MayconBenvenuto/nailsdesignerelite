@@ -4,10 +4,12 @@ import { useWebVitals } from './hooks/usePerformance';
 
 // Componentes críticos carregados imediatamente
 import Hero from './components/Hero';
+import ValueProposition from './components/ValueProposition';
 // import Quiz from './components/Quiz';
 
 // Componentes lazy-loaded (versão simplificada)
 const About = lazy(() => import('./components/About'));
+// const ValueProposition = lazy(() => import('./components/ValueProposition'));
 const CourseHighlight = lazy(() => import('./components/CourseHighlight'));
 const Modules = lazy(() => import('./components/Modules'));
 const Instructor = lazy(() => import('./components/Instructor'));
@@ -38,8 +40,13 @@ function App() {
       {/* Componentes críticos */}
       {/* <Quiz /> */}
       <Hero />
+      <ValueProposition />
       
       {/* Componentes com lazy loading simples */}
+      {/* <Suspense fallback={<LoadingFallback />}>
+        <ValueProposition />
+      </Suspense> */}
+      
       <Suspense fallback={<LoadingFallback />}>
         <About />
       </Suspense>
