@@ -12,14 +12,14 @@ const ValueProposition = () => {
         
         <div className="value-grid">
           <div className="value-item" data-aos="fade-up" data-aos-delay="100">
-            <div className="value-icon">�</div>
+            <div className="value-icon">📚</div>
             <h3>+100 Aulas Completas</h3>
             <p>Do básico ao avançado, tudo explicado passo a passo</p>
             <span className="value-price">Valor: R$97,00</span>
           </div>
           
           <div className="value-item" data-aos="fade-up" data-aos-delay="200">
-            <div className="value-icon">�</div>
+            <div className="value-icon">🏆</div>
             <h3>20 Certificados Profissionais</h3>
             <p>Certificados reconhecidos para validar seu conhecimento</p>
             <span className="value-price">Valor: R$50,00</span>

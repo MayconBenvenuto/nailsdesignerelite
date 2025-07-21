@@ -10,9 +10,9 @@ const Hero = () => {
         </div>
         <h1 className="font-extrabold" data-aos="fade-up">Transforme Sua Vida em 30 Dias Sendo uma Nail Designer Profissional</h1>
         <div className="price-highlight" data-aos="zoom-in" data-aos-delay="100">
-          <span className="old-price small-text">de R$197,00</span>
+          <span className="old-price small-text">de R$79,90</span>
           <span className="current-price font-bold">por apenas R$19,90</span>
-          <span className="discount-badge cta-text">90% OFF</span>
+          <span className="discount-badge cta-text">75% OFF</span>
         </div>
         <p className="hero-description font-medium" data-aos="fade-up" data-aos-delay="150">
           <span className="feature-icon">▸</span> <strong className="highlight-text">Método Completo do Básico ao Avançado</strong> - Minhas alunas estão faturando até <span className="valor-destaque accent-text font-bold">R$4.000/mês</span> trabalhando em casa!<br />

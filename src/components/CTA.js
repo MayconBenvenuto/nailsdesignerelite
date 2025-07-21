@@ -10,7 +10,7 @@ const CTA = () => {
         </div>
         <h2 className="font-extrabold">Não Perca Esta Oportunidade Única!</h2>
         <div className="cta-price-highlight">
-          <span className="cta-old-price small-text">de R$197,00</span>
+          <span className="cta-old-price small-text">de R$79,90</span>
           <span className="cta-current-price font-bold">por apenas R$19,90</span>
         </div>
         <p className="font-medium">
